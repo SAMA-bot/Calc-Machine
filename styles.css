@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #3498db, #8e44ad);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.operator {
+    background-color: rgba(255, 166, 0, 0.6);
+}
+
+.operator:hover {
+    background-color: rgba(255, 166, 0, 0.8);
+}
+
+.clear, .backspace {
+    background-color: rgba(255, 99, 71, 0.6);
+}
+
+.clear:hover, .backspace:hover {
+    background-color: rgba(255, 99, 71, 0.8);
+}
+
+.equals {
+    background-color: rgba(50, 205, 50, 0.6);
+}
+
+.equals:hover {
+    background-color: rgba(50, 205, 50, 0.8);
+}
+
+#toggleAdvanced {
+    width: 100%;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.advanced-functions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+#inverseBtn.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.history-section {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.history-section h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#history-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+#history-list li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
